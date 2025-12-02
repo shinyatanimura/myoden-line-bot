@@ -93,7 +93,7 @@ def handle_message(event: MessageEvent):
     arrival = now + timedelta(minutes=minutes)
     arrival_str = arrival.strftime("%H:%M")
 
-    reply_text = f"{station_name} から妙典までは約 {minutes} 分です。\n{arrival_str} ごろに到着予定です。"
+    reply_text = f"{station_name}から妙典までは約{minutes}分です。\n{arrival_str}ごろに到着予定です。"
 
     line_bot_api.reply_message(
         event.reply_token,
